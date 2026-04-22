@@ -8,7 +8,7 @@ services:
     # TODO(step-5b): set the DATABASE_URL env var so the app can reach Postgres.
       # HINT: you can find this URL in .env.example
       environment:
-          DATABASE_URL: ${DATABASE_URL}
+          DATABASE_URL: postgres://postgres:postgres@db:5432/workshop
 
     # TODO(step-5c): make `web` wait until `db` is healthy before starting.
       depends_on:
